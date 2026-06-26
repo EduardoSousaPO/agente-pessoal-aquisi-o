@@ -1,6 +1,20 @@
 # Tooling / agente local (não faz parte do produto)
 .claude/
 
+# >>> DADOS DE LEADS / PII — mantém LOCAL, NUNCA versionar <<<
+# Material real de prospecção com nomes/e-mails de leads.
+Mensagens_Prontas.md
+Estrategia_Reunioes_Goiania.md
+Ranking_Aberturas_Leads.md
+Controle_Campanha_Goiania.xlsx
+Abertura E-mail Leads Goiania.xlsx
+copy_captacao-ldc-goiania_2026-06-10.md
+Links_WhatsApp.md
+/dados-leads/
+/data/
+*.leads.json
+*.pii.*
+
 # Dependências
 node_modules/
 .pnp
