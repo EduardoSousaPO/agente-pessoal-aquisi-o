@@ -5,7 +5,7 @@
 > Regra: a cada iteração, pegar a 1ª tarefa `PENDENTE` cujas dependências estão `CONCLUÍDA`,
 > implementar por completo, marcar `CONCLUÍDA` (1 linha), commitar, e parar.
 
-**Última atualização:** 2026-06-26 — F0.1 concluída.
+**Última atualização:** 2026-06-26 — F0.2 concluída (SKILL.md método Mullen: gate, estágios, metas, Avis, catálogo, correção, auto-correção).
 
 ---
 
@@ -14,7 +14,7 @@
 | ID | Tarefa | Depende de | Status |
 |----|--------|------------|--------|
 | F0.1 | Criar estrutura de pastas (`tutor/skills/`, `tutor/memoria/`, `tutor/hermes/`, `crm-notion/`, `runbooks/`) | — | CONCLUÍDA |
-| F0.2 | `tutor/skills/metodo-mullen/SKILL.md` (gate, estágios, metas, Avis, catálogo, regras de correção, auto-correção) | F0.1 | PENDENTE |
+| F0.2 | `tutor/skills/metodo-mullen/SKILL.md` (gate, estágios, metas, Avis, catálogo, regras de correção, auto-correção) | F0.1 | CONCLUÍDA |
 | F0.3 | `tutor/memoria/USER.md` (contexto Eduardo + placeholders) | F0.1 | PENDENTE |
 | F0.4 | `tutor/skills/metodo-mullen/talk-tracks.md` (scripts `[RECONSTR.]` no tom de Eduardo) | F0.2 | PENDENTE |
 | F0.5 | `tutor/PROMPT-SISTEMA.md` (system prompt do Tutor + intake) | F0.2, F0.3 | PENDENTE |
