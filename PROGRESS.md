@@ -5,7 +5,7 @@
 > Regra: a cada iteração, pegar a 1ª tarefa `PENDENTE` cujas dependências estão `CONCLUÍDA`,
 > implementar por completo, marcar `CONCLUÍDA` (1 linha), commitar, e parar.
 
-**Última atualização:** 2026-06-26 — F0.2 concluída (SKILL.md método Mullen: gate, estágios, metas, Avis, catálogo, correção, auto-correção).
+**Última atualização:** 2026-06-26 — F0.3 concluída (USER.md com contexto Eduardo + placeholders dos 3 inputs da §2.1 da spec).
 
 ---
 
@@ -15,7 +15,7 @@
 |----|--------|------------|--------|
 | F0.1 | Criar estrutura de pastas (`tutor/skills/`, `tutor/memoria/`, `tutor/hermes/`, `crm-notion/`, `runbooks/`) | — | CONCLUÍDA |
 | F0.2 | `tutor/skills/metodo-mullen/SKILL.md` (gate, estágios, metas, Avis, catálogo, regras de correção, auto-correção) | F0.1 | CONCLUÍDA |
-| F0.3 | `tutor/memoria/USER.md` (contexto Eduardo + placeholders) | F0.1 | PENDENTE |
+| F0.3 | `tutor/memoria/USER.md` (contexto Eduardo + placeholders) | F0.1 | CONCLUÍDA |
 | F0.4 | `tutor/skills/metodo-mullen/talk-tracks.md` (scripts `[RECONSTR.]` no tom de Eduardo) | F0.2 | PENDENTE |
 | F0.5 | `tutor/PROMPT-SISTEMA.md` (system prompt do Tutor + intake) | F0.2, F0.3 | PENDENTE |
 
@@ -59,7 +59,18 @@
 > Itens que só Eduardo fornece. Serão preenchidos via marcador `<<<PREENCHER: ...>>>`
 > nos artefatos e listados aqui conforme as tarefas os encontrarem.
 
-_(nenhum item registrado ainda — serão adicionados quando as tarefas dependentes forem alcançadas)_
+Estes 3 inputs (§2.1 da spec) estão como `<<<PREENCHER>>>` em `tutor/memoria/USER.md`.
+A constituição roda com placeholders; o Tutor opera com a ressalva até travarem:
+
+1. **Patamar de patrimônio (R$)** — o número que separa *suspect* de *qualified*
+   (gate critério #2). Pode ser 1 valor ou 1 por nicho. → `USER.md` §3.1.
+2. **MAPs adicionais (~4 além de médicos)** — nicho + lead-time + threshold + fonte
+   da lista de cada um. → `USER.md` §3.2.
+3. **Amostras reais de tom de voz (2-3 mensagens)** — sem PII (nomes/contatos), só
+   o fraseado, pra calibrar os rascunhos. → `USER.md` §4.1.
+
+_(Credenciais de Notion/Hermes/Telegram/modelo serão adicionadas aqui quando as
+Fases 1-2 forem alcançadas.)_
 
 ---
 
