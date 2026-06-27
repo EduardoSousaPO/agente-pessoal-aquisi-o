@@ -5,7 +5,7 @@
 > Regra: a cada iteração, pegar a 1ª tarefa `PENDENTE` cujas dependências estão `CONCLUÍDA`,
 > implementar por completo, marcar `CONCLUÍDA` (1 linha), commitar, e parar.
 
-**Última atualização:** 2026-06-27 — **FASE 2 COMPLETA** (F2.3: NOTION-MCP.md com server oficial makenotion, permissões mínimas, mapa comportamento→tool, aviso Windows #291). Próxima: F3.1.
+**Última atualização:** 2026-06-27 — F3.1 concluída (curadoria-diaria/SKILL.md: 4 temas, fila por gatilho/esfriando, match com perfil de interesse, digest 2-3/dia, registra toque ao confirmar). Próxima: F3.2.
 
 ---
 
@@ -40,7 +40,7 @@
 
 | ID | Tarefa | Depende de | Status |
 |----|--------|------------|--------|
-| F3.1 | `tutor/skills/curadoria-diaria/SKILL.md` (4 temas, cruzamento, esfriando, digest) | F0.2, F0.3 | PENDENTE |
+| F3.1 | `tutor/skills/curadoria-diaria/SKILL.md` (4 temas, cruzamento, esfriando, digest) | F0.2, F0.3 | CONCLUÍDA |
 | F3.2 | `tutor/skills/curadoria-diaria/AGENDAMENTO.md` (agendar digest + fallbacks) | F3.1 | PENDENTE |
 | F3.3 | `tutor/skills/curadoria-diaria/templates-digest.md` (2-3 formatos) | F3.1 | PENDENTE |
 
