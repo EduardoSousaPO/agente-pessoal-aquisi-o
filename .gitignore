@@ -20,6 +20,12 @@ node_modules/
 .pnp
 .pnp.js
 
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
 # Build / saída
 dist/
 build/
