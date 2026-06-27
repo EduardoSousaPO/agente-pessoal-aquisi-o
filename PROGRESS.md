@@ -5,7 +5,7 @@
 > Regra: a cada iteração, pegar a 1ª tarefa `PENDENTE` cujas dependências estão `CONCLUÍDA`,
 > implementar por completo, marcar `CONCLUÍDA` (1 linha), commitar, e parar.
 
-**Última atualização:** 2026-06-27 — **FASE 1 COMPLETA** (F1.4: seed-exemplo.md com 3 leads fictícios cobrindo trilha/pipeline/nurturing+gatilho e validando as 4 fórmulas). Próxima: F2.1.
+**Última atualização:** 2026-06-27 — F2.1 concluída (SETUP-HERMES.md: runbook com passos reais da doc oficial — instalar, modelo BYO, carregar skills/prompt/memória, Telegram, MCP, agendar). Próxima: F2.2.
 
 ---
 
@@ -32,7 +32,7 @@
 
 | ID | Tarefa | Depende de | Status |
 |----|--------|------------|--------|
-| F2.1 | `tutor/hermes/SETUP-HERMES.md` (runbook instalação + skills + Telegram + Notion MCP) | F0.2, F1.1 | PENDENTE |
+| F2.1 | `tutor/hermes/SETUP-HERMES.md` (runbook instalação + skills + Telegram + Notion MCP) | F0.2, F1.1 | CONCLUÍDA |
 | F2.2 | `tutor/hermes/config.exemplo.*` (configs exemplo sem segredos) | F2.1 | PENDENTE |
 | F2.3 | `tutor/hermes/NOTION-MCP.md` (Notion MCP server + permissões + leitura/escrita) | F2.1 | PENDENTE |
 
@@ -73,7 +73,10 @@ A constituição roda com placeholders; o Tutor opera com a ressalva até travar
 4. **`NOTION_TOKEN`** + **`NOTION_PARENT_PAGE_ID`** — integração interna do Notion
    e página-pai compartilhada com ela. Destrava o script F1.3 e o Notion MCP.
    Passo a passo em `crm-notion/SETUP-NOTION.md` §1.
-   _(Hermes/Telegram/modelo serão adicionados quando a Fase 2 for alcançada.)_
+5. **Provedor de modelo (BYO)** — chave de API do modelo escolhido (Nous Portal /
+   `OPENROUTER_API_KEY` / outro). Vai em `~/.hermes/.env`. Ver `SETUP-HERMES.md` §2.
+6. **`TELEGRAM_BOT_TOKEN`** (BotFather) + **`TELEGRAM_ALLOWED_USERS`** (seu user ID
+   numérico, p/ travar o bot só p/ você). Ver `SETUP-HERMES.md` §4.
 
 ---
 
