@@ -5,7 +5,7 @@
 > Regra: a cada iteração, pegar a 1ª tarefa `PENDENTE` cujas dependências estão `CONCLUÍDA`,
 > implementar por completo, marcar `CONCLUÍDA` (1 linha), commitar, e parar.
 
-**Última atualização:** 2026-06-27 — F1.3 concluída (setup_notion.py idempotente; bloqueio explícito sem token, exit 2; UTF-8 no Windows; py_compile OK). Próxima: F1.4.
+**Última atualização:** 2026-06-27 — **FASE 1 COMPLETA** (F1.4: seed-exemplo.md com 3 leads fictícios cobrindo trilha/pipeline/nurturing+gatilho e validando as 4 fórmulas). Próxima: F2.1.
 
 ---
 
@@ -26,7 +26,7 @@
 | F1.1 | `crm-notion/MODELO-DADOS.md` (3 bases, props, fórmulas "esfriando" + gate) | F0.1 | CONCLUÍDA |
 | F1.2 | `crm-notion/SETUP-NOTION.md` (runbook bases + views + token) | F1.1 | CONCLUÍDA |
 | F1.3 | `crm-notion/setup_notion.py` (script idempotente via Notion API) | F1.1 | CONCLUÍDA |
-| F1.4 | `crm-notion/seed-exemplo.md` (2-3 leads fictícios) | F1.1 | PENDENTE |
+| F1.4 | `crm-notion/seed-exemplo.md` (2-3 leads fictícios) | F1.1 | CONCLUÍDA |
 
 ## FASE 2 — Hermes + Telegram + Notion
 
