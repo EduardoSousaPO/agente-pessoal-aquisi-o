@@ -5,7 +5,7 @@
 > Regra: a cada iteração, pegar a 1ª tarefa `PENDENTE` cujas dependências estão `CONCLUÍDA`,
 > implementar por completo, marcar `CONCLUÍDA` (1 linha), commitar, e parar.
 
-**Última atualização:** 2026-06-27 — F4.2 concluída (ROTINA-DIARIA.md: 3 blocos diários ~1h30, gatilhos fora de hora, ritual semanal de metas, ritmo mínimo, guardrails). Próxima: F4.3.
+**Última atualização:** 2026-06-27 — **BACKLOG COMPLETO (F0.1→F4.3, 17 tarefas)**. Todas CONCLUÍDA; nenhuma BLOQUEADA. Resta só credencial+execução de Eduardo (ver `## ✅ PRONTO ATÉ AQUI` e `docs/plans/CHECKLIST-GO-LIVE.md`).
 
 ---
 
@@ -50,7 +50,7 @@
 |----|--------|------------|--------|
 | F4.1 | `tutor/skills/intake-interview/SKILL.md` (roteiro, gate, gravação, resumo) | F0.2, F0.3, F1.1 | CONCLUÍDA |
 | F4.2 | `runbooks/ROTINA-DIARIA.md` (rotina 1-2h/dia + ritual semanal) | F3.1, F4.1 | CONCLUÍDA |
-| F4.3 | `docs/plans/CHECKLIST-GO-LIVE.md` (todos os bloqueios humanos consolidados) | F2.1, F1.2 | PENDENTE |
+| F4.3 | `docs/plans/CHECKLIST-GO-LIVE.md` (todos os bloqueios humanos consolidados) | F2.1, F1.2 | CONCLUÍDA |
 
 ---
 
@@ -82,4 +82,52 @@ A constituição roda com placeholders; o Tutor opera com a ressalva até travar
 
 ## ✅ PRONTO ATÉ AQUI
 
-_(resumo final — preenchido quando todas as tarefas estiverem CONCLUÍDA ou BLOQUEADA)_
+**Status:** as 17 tarefas do backlog (F0.1 → F4.3) estão **CONCLUÍDA**. Nenhuma
+BLOQUEADA — os valores de conteúdo de Eduardo foram travados durante a execução
+(threshold R$ 1mi+, 5 MAPs, trilha de aquecimento, amostras de tom em `USER.md`).
+O que falta para **ligar o motor** é só **credencial + execução** de Eduardo.
+
+### O que ficou pronto no repo
+**Fase 0 — Constituição do Tutor**
+- `tutor/skills/metodo-mullen/SKILL.md` — gate 3 critérios [WP], estágios, metas
+  calibradas, Avis+gatilhos, catálogo de toques, 9 regras de correção, auto-correção.
+- `tutor/skills/metodo-mullen/talk-tracks.md` — scripts [RECONSTR.] (connecting
+  appointment, intros médicas, COI, sequência de toques, objeções).
+- `tutor/memoria/USER.md` — contexto travado de Eduardo/LDC (PLACEHOLDER vs TRAVADO).
+- `tutor/PROMPT-SISTEMA.md` — persona, 5 comportamentos, intake, guardrails.
+
+**Fase 1 — CRM Notion**
+- `crm-notion/MODELO-DADOS.md` — 3 bases + trilha de aquecimento pré-pipeline, 5 MAPs,
+  4 fórmulas (gate, diluição, engajamento, esfriando — Formula 2.0 com `.name`).
+- `crm-notion/SETUP-NOTION.md` — runbook bases + 6 views + painel de metas + token.
+- `crm-notion/setup_notion.py` (+ `requirements.txt`) — script idempotente; bloqueio
+  explícito (exit 2) sem credencial; trata limitações da API; UTF-8 no Windows.
+- `crm-notion/seed-exemplo.md` — 3 leads fictícios validando todas as fórmulas/views.
+
+**Fase 2 — Hermes + Telegram + Notion**
+- `tutor/hermes/SETUP-HERMES.md` — runbook com passos reais da doc oficial.
+- `tutor/hermes/config.exemplo.yaml` + `.env.exemplo` — configs sem segredos.
+- `tutor/hermes/NOTION-MCP.md` — server oficial makenotion, permissões mínimas, uso.
+
+**Fase 3 — Curadoria diária**
+- `tutor/skills/curadoria-diaria/SKILL.md` — 4 temas, fila por prioridade, digest.
+- `.../AGENDAMENTO.md` — agendar + 5 fallbacks + sob demanda.
+- `.../templates-digest.md` — 3 formatos prontos (fictícios).
+
+**Fase 4 — Intake + operação**
+- `tutor/skills/intake-interview/SKILL.md` — 5 perguntas/lead, classificação+gate, resumo.
+- `runbooks/ROTINA-DIARIA.md` — rotina 1-2h/dia + ritual semanal.
+- `docs/plans/CHECKLIST-GO-LIVE.md` — checklist única de tudo que depende de Eduardo.
+
+### ⛔ O que depende de você (credenciais + execução)
+Detalhe e ordem em **`docs/plans/CHECKLIST-GO-LIVE.md`**. Resumo das credenciais
+(todas no `~/.hermes/.env`, nunca no git):
+1. `NOTION_TOKEN` + `NOTION_PARENT_PAGE_ID` (integração interna + página-pai).
+2. Chave do provedor de modelo (Nous Portal / `OPENROUTER_API_KEY` / outro).
+3. `TELEGRAM_BOT_TOKEN` (BotFather) + `TELEGRAM_ALLOWED_USERS` (seu user ID).
+
+Execução: criar as 3 bases (script ou manual) + finalizar rollups/fórmulas/views;
+instalar Hermes, carregar as 3 skills + prompt + memória; subir o gateway Telegram;
+plugar o Notion MCP; agendar o digest; rodar o intake da base real.
+
+**Loop encerrado** — backlog 100% concluído, sem próxima iteração a agendar.
