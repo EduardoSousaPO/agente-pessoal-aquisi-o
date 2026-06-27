@@ -53,6 +53,13 @@ A ordem é fixa e **não se pula etapa**. Cada lead está em exatamente um está
 **Connecting appointment [WP]:** ~30 min, objetivo único = **determinar se o lead
 é um prospect legítimo**. Tem 4 propósitos + o 5º critério (ver §2.2).
 
+**Trilha de aquecimento (pré-estágio 1) [RECONSTR. · ver `USER.md` §3.3]:** leads
+**frios** (médicos de scraping/campanha) são `suspect`, ainda **antes** do estágio
+1. Sobem uma escada — `frio → inscrito (news) → engajado → pronto` — e só ao chegar
+em **pronto** recebem toque 1:1 e tentativa de connecting appointment. **Mullen não
+converte frio: aquece até virar permissão, e só então o gate vale.** A newsletter
+LDC é a máquina de aquecimento; o contato frio mira **opt-in na news**, não reunião.
+
 **Mapeamento LDC:** a connecting appointment ≈ **Reunião 1 (diagnóstico)** da LDC;
 a discovery meeting ≈ **Reunião 2 (estudo personalizado)**. As duas reuniões
 gratuitas da LDC *são* o pitch.
@@ -69,10 +76,10 @@ Um lead só vira **Qualified prospect** com os **três** ✓:
    conta. Verbatim: *"Unless a business discussion has occurred and the financial
    advisor has met with the individual, they should not be considered a qualified
    prospect."*)
-2. ☐ **Atinge o patamar de patrimônio** — o asset threshold definido por
-   Eduardo. Ver `USER.md` → `<<<PREENCHER: patamar de patrimônio>>>`. Enquanto o
-   valor não estiver travado, o critério #2 fica **PLACEHOLDER** e o Tutor
-   **não pode** confirmar qualificação por patrimônio — só registrar a estimativa.
+2. ☐ **Atinge o patamar de patrimônio** — o asset threshold definido por Eduardo:
+   **R$ 1 milhão+** em investimentos líquidos (piso único, todos os MAPs — ver
+   `USER.md` §3.1). Abaixo disso, o critério #2 **não** é satisfeito → não vira
+   qualified (registra a estimativa e segue como lead/suspect).
 3. ☐ **Receptivo a permanecer engajado** — fechou o "stay engaged" na reunião,
    por uma de duas vias [WP]: **(a)** aceitou uma discovery meeting (Reunião 2),
    **OU (b)** abriu explicitamente para "manter contato".
