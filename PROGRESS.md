@@ -5,7 +5,7 @@
 > Regra: a cada iteração, pegar a 1ª tarefa `PENDENTE` cujas dependências estão `CONCLUÍDA`,
 > implementar por completo, marcar `CONCLUÍDA` (1 linha), commitar, e parar.
 
-**Última atualização:** 2026-06-27 — F3.2 concluída (AGENDAMENTO.md: agendar digest em linguagem natural + 5 fallbacks + modo sob demanda). Próxima: F3.3.
+**Última atualização:** 2026-06-27 — **FASE 3 COMPLETA** (F3.3: templates-digest.md com 3 formatos fictícios — dia cheio/magro/Pronto-na-trilha). Próxima: F4.1.
 
 ---
 
@@ -42,7 +42,7 @@
 |----|--------|------------|--------|
 | F3.1 | `tutor/skills/curadoria-diaria/SKILL.md` (4 temas, cruzamento, esfriando, digest) | F0.2, F0.3 | CONCLUÍDA |
 | F3.2 | `tutor/skills/curadoria-diaria/AGENDAMENTO.md` (agendar digest + fallbacks) | F3.1 | CONCLUÍDA |
-| F3.3 | `tutor/skills/curadoria-diaria/templates-digest.md` (2-3 formatos) | F3.1 | PENDENTE |
+| F3.3 | `tutor/skills/curadoria-diaria/templates-digest.md` (2-3 formatos) | F3.1 | CONCLUÍDA |
 
 ## FASE 4 — Intake + operação
 
