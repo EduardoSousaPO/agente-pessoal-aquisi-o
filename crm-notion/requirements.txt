@@ -1,0 +1,3 @@
+# Dependências do setup_notion.py
+# Instale com:  python -m pip install -r crm-notion/requirements.txt
+requests>=2.31
