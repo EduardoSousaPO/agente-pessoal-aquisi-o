@@ -46,17 +46,26 @@ mcp_servers:
     command: "npx"
     args: ["-y", "@notionhq/notion-mcp-server"]
     env:
-      # O server lê o header de Authorization desta env (valor real no .env):
-      OPENAPI_MCP_HEADERS: '{"Authorization":"Bearer ${NOTION_TOKEN}","Notion-Version":"2022-06-28"}'
-    # Exponha só o necessário para ler/escrever leads, toques e gatilhos:
+      # Recomendado pela doc oficial: token simples (valor real no .env).
+      NOTION_TOKEN: "${NOTION_TOKEN}"
+      # Fallback (Windows issue #291): troque a linha acima por OPENAPI_MCP_HEADERS:
+      # OPENAPI_MCP_HEADERS: '{"Authorization":"Bearer ${NOTION_TOKEN}","Notion-Version":"2025-09-03"}'
+    # Exponha só o necessário (ler/criar/atualizar). CONFIRME os nomes reais com
+    # `hermes mcp` após conectar — há 2 gerações de nomes (ver NOTION-MCP.md §3.2):
     tools:
       include:
-        - API-post-search          # localizar bases/páginas
-        - API-post-database-query  # ler Leads/Toques/Gatilhos (views/filtros)
-        - API-retrieve-a-database  # schema das bases
-        - API-post-page            # criar lead/toque/gatilho
-        - API-patch-page           # atualizar estágio/gate/trilha
-        - API-retrieve-a-page      # ler um lead
+        # geração 2025-09-03 (provável):
+        - search          # localizar as bases Leads/Toques/Gatilhos
+        - fetch           # ler um item (lead/toque/gatilho)
+        - create-pages    # criar lead / registrar toque / registrar gatilho
+        - update-page     # mudar estágio, marcar gate, mover trilha
+        # geração OpenAPI (alternativa, se o seu server usar estes nomes):
+        # - API-post-search
+        # - API-post-database-query
+        # - API-retrieve-a-database
+        # - API-post-page
+        # - API-patch-page
+        # - API-retrieve-a-page
     prompts: false
     resources: false
 

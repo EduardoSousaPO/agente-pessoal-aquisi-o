@@ -5,7 +5,7 @@
 > Regra: a cada iteração, pegar a 1ª tarefa `PENDENTE` cujas dependências estão `CONCLUÍDA`,
 > implementar por completo, marcar `CONCLUÍDA` (1 linha), commitar, e parar.
 
-**Última atualização:** 2026-06-27 — F2.2 concluída (config.exemplo.yaml + .env.exemplo, só placeholders; exceção no .gitignore p/ rastrear o template). Próxima: F2.3.
+**Última atualização:** 2026-06-27 — **FASE 2 COMPLETA** (F2.3: NOTION-MCP.md com server oficial makenotion, permissões mínimas, mapa comportamento→tool, aviso Windows #291). Próxima: F3.1.
 
 ---
 
@@ -34,7 +34,7 @@
 |----|--------|------------|--------|
 | F2.1 | `tutor/hermes/SETUP-HERMES.md` (runbook instalação + skills + Telegram + Notion MCP) | F0.2, F1.1 | CONCLUÍDA |
 | F2.2 | `tutor/hermes/config.exemplo.*` (configs exemplo sem segredos) | F2.1 | CONCLUÍDA |
-| F2.3 | `tutor/hermes/NOTION-MCP.md` (Notion MCP server + permissões + leitura/escrita) | F2.1 | PENDENTE |
+| F2.3 | `tutor/hermes/NOTION-MCP.md` (Notion MCP server + permissões + leitura/escrita) | F2.1 | CONCLUÍDA |
 
 ## FASE 3 — Curadoria diária
 
