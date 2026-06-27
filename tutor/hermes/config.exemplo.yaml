@@ -1,0 +1,65 @@
+# config.exemplo.yaml — EXEMPLO do ~/.hermes/config.yaml para o Tutor LDC
+# ---------------------------------------------------------------------------
+# SEM SEGREDOS. Tokens/chaves vão em ~/.hermes/.env (ver .env.exemplo), nunca aqui.
+# Copie o relevante para o seu ~/.hermes/config.yaml. Confirme os nomes de chave
+# com `hermes config` da SUA versão antes de colar — esta é uma referência, não um
+# contrato. Passo a passo: SETUP-HERMES.md. MCP do Notion: NOTION-MCP.md.
+# ===========================================================================
+
+# --- Modelo (bring-your-own) ----------------------------------------------
+# A chave correspondente vive no .env (ex.: OPENROUTER_API_KEY). Aqui só o nome.
+model: anthropic/claude-opus-4.6        # exemplo — escolha o seu provedor/modelo
+
+# --- System prompt do Tutor -----------------------------------------------
+# Aponta para a constituição (persona + 5 comportamentos + intake).
+# Se a sua build não tiver esta chave, cole o conteúdo no campo de instruções.
+system_prompt_file: "C:/Users/SEU_USUARIO/Projetos_App_Desktop/aquisicao-ldc-eduardo/tutor/PROMPT-SISTEMA.md"
+
+# --- Memória do usuário ----------------------------------------------------
+# USER.md = quem é Eduardo + o que está travado. Sem PII de leads.
+memory_file: "C:/Users/SEU_USUARIO/Projetos_App_Desktop/aquisicao-ldc-eduardo/tutor/memoria/USER.md"
+
+# --- Skills ----------------------------------------------------------------
+# As skills moram em ~/.hermes/skills/. Copiamos as nossas para .../skills/ldc/.
+# (Viram slash-commands automaticamente: /metodo-mullen, /curadoria-diaria, /intake-interview.)
+# Esta seção é informativa; a "instalação" é a cópia das pastas (SETUP-HERMES.md §3.1).
+skills:
+  enabled:
+    - metodo-mullen
+    - curadoria-diaria
+    - intake-interview
+
+# --- Gateways de mensageria -------------------------------------------------
+# Telegram: os valores TELEGRAM_* ficam no .env. allowed_users TRAVA o bot a você.
+gateways:
+  telegram:
+    enabled: true
+    # token e allowed_users vêm do .env:
+    #   TELEGRAM_BOT_TOKEN, TELEGRAM_ALLOWED_USERS
+    # (deixe-os FORA deste arquivo)
+
+# --- MCP servers -----------------------------------------------------------
+# Notion via MCP (stdio). O token de auth vem do .env (NOTION_TOKEN) — referenciado
+# por env var, não escrito aqui. Detalhe e permissões mínimas: NOTION-MCP.md.
+mcp_servers:
+  notion:
+    command: "npx"
+    args: ["-y", "@notionhq/notion-mcp-server"]
+    env:
+      # O server lê o header de Authorization desta env (valor real no .env):
+      OPENAPI_MCP_HEADERS: '{"Authorization":"Bearer ${NOTION_TOKEN}","Notion-Version":"2022-06-28"}'
+    # Exponha só o necessário para ler/escrever leads, toques e gatilhos:
+    tools:
+      include:
+        - API-post-search          # localizar bases/páginas
+        - API-post-database-query  # ler Leads/Toques/Gatilhos (views/filtros)
+        - API-retrieve-a-database  # schema das bases
+        - API-post-page            # criar lead/toque/gatilho
+        - API-patch-page           # atualizar estágio/gate/trilha
+        - API-retrieve-a-page      # ler um lead
+    prompts: false
+    resources: false
+
+# --- Agendamento ------------------------------------------------------------
+# O digest é agendado em linguagem natural depois do gateway no ar
+# (ver curadoria-diaria/AGENDAMENTO.md). Nada a fixar aqui.

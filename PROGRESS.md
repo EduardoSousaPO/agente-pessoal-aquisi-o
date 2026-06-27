@@ -5,7 +5,7 @@
 > Regra: a cada iteração, pegar a 1ª tarefa `PENDENTE` cujas dependências estão `CONCLUÍDA`,
 > implementar por completo, marcar `CONCLUÍDA` (1 linha), commitar, e parar.
 
-**Última atualização:** 2026-06-27 — F2.1 concluída (SETUP-HERMES.md: runbook com passos reais da doc oficial — instalar, modelo BYO, carregar skills/prompt/memória, Telegram, MCP, agendar). Próxima: F2.2.
+**Última atualização:** 2026-06-27 — F2.2 concluída (config.exemplo.yaml + .env.exemplo, só placeholders; exceção no .gitignore p/ rastrear o template). Próxima: F2.3.
 
 ---
 
@@ -33,7 +33,7 @@
 | ID | Tarefa | Depende de | Status |
 |----|--------|------------|--------|
 | F2.1 | `tutor/hermes/SETUP-HERMES.md` (runbook instalação + skills + Telegram + Notion MCP) | F0.2, F1.1 | CONCLUÍDA |
-| F2.2 | `tutor/hermes/config.exemplo.*` (configs exemplo sem segredos) | F2.1 | PENDENTE |
+| F2.2 | `tutor/hermes/config.exemplo.*` (configs exemplo sem segredos) | F2.1 | CONCLUÍDA |
 | F2.3 | `tutor/hermes/NOTION-MCP.md` (Notion MCP server + permissões + leitura/escrita) | F2.1 | PENDENTE |
 
 ## FASE 3 — Curadoria diária
