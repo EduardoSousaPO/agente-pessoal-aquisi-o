@@ -177,10 +177,11 @@ if(
 
 ### 3.2 `Gate · status` — alerta de inconsistência [WP]
 Sinaliza se alguém está em `Qualified prospect`/`Nurturing` **sem** os 3 ✓
-(diluição do pipeline — o erro nº 1):
+(diluição do pipeline — o erro nº 1). **Notion Formula 2.0:** Status é objeto →
+compare com `.name`:
 ```
 if(
-  (prop("Estágio") == "Qualified prospect" or prop("Estágio") == "Nurturing")
+  (prop("Estágio").name == "Qualified prospect" or prop("Estágio").name == "Nurturing")
     and not (prop("Gate ✓ Reunião feita") and prop("Gate ✓ Patrimônio R$1mi+") and prop("Gate ✓ Receptivo (stay engaged)")),
   "🚨 Qualified sem os 3 ✓ — revisar",
   ""
@@ -201,15 +202,18 @@ if(empty(prop("Aberturas recentes (news)")), "❄️ sem dado",
 
 ### 3.4 `Esfriando?` — sem toque há +N dias (só no pipeline) [spec §7]
 Suspects são aquecidos pela **newsletter**, não por toques 1:1 → **não** entram no
-alerta de esfriando. O alerta vale para quem está na Zona B:
+alerta de esfriando. O alerta vale para quem está na Zona B. **Notion Formula 2.0:**
+Status é objeto → compare com `.name`:
 ```
-if(prop("Estágio") == "Suspect (aquecimento)", "—",
+if(prop("Estágio").name == "Suspect (aquecimento)", "—",
   if(empty(prop("Último toque")), "⚠️ nunca tocado",
     if(dateBetween(now(), prop("Último toque"), "days") > 14, "🥶 Esfriando (" + format(dateBetween(now(), prop("Último toque"), "days")) + "d)",
       "🔥 Em dia")))
 ```
 > Janela de 14 dias = default de `USER.md` §5 (ajustável). Move-se para fórmula um
-> número, não regra de negócio escondida.
+> número, não regra de negócio escondida. As fórmulas que comparam Status/Select
+> usam `.name` (Formula 2.0); checkbox/number (§3.1, §3.3) não. Versão de referência
+> de cole-e-use em `SETUP-NOTION.md` §4.
 
 ---
 

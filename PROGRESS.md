@@ -5,7 +5,7 @@
 > Regra: a cada iteração, pegar a 1ª tarefa `PENDENTE` cujas dependências estão `CONCLUÍDA`,
 > implementar por completo, marcar `CONCLUÍDA` (1 linha), commitar, e parar.
 
-**Última atualização:** 2026-06-27 — F1.1 concluída (MODELO-DADOS.md: 3 bases + trilha de aquecimento pré-pipeline, 5 MAPs, fórmulas gate/esfriando/engajamento). Próxima: F1.2.
+**Última atualização:** 2026-06-27 — F1.2 concluída (SETUP-NOTION.md: runbook bases+views+token; fórmulas canônicas Formula 2.0 com `.name`). Próxima: F1.3.
 
 ---
 
@@ -24,7 +24,7 @@
 | ID | Tarefa | Depende de | Status |
 |----|--------|------------|--------|
 | F1.1 | `crm-notion/MODELO-DADOS.md` (3 bases, props, fórmulas "esfriando" + gate) | F0.1 | CONCLUÍDA |
-| F1.2 | `crm-notion/SETUP-NOTION.md` (runbook bases + views + token) | F1.1 | PENDENTE |
+| F1.2 | `crm-notion/SETUP-NOTION.md` (runbook bases + views + token) | F1.1 | CONCLUÍDA |
 | F1.3 | `crm-notion/setup_notion.py` (script idempotente via Notion API) | F1.1 | PENDENTE |
 | F1.4 | `crm-notion/seed-exemplo.md` (2-3 leads fictícios) | F1.1 | PENDENTE |
 
@@ -69,8 +69,11 @@ A constituição roda com placeholders; o Tutor opera com a ressalva até travar
 3. **Amostras reais de tom de voz (2-3 mensagens)** — sem PII (nomes/contatos), só
    o fraseado, pra calibrar os rascunhos. → `USER.md` §4.1.
 
-_(Credenciais de Notion/Hermes/Telegram/modelo serão adicionadas aqui quando as
-Fases 1-2 forem alcançadas.)_
+**Credenciais (Fase 1-2) — só Eduardo gera, vão pro `.env` (nunca git):**
+4. **`NOTION_TOKEN`** + **`NOTION_PARENT_PAGE_ID`** — integração interna do Notion
+   e página-pai compartilhada com ela. Destrava o script F1.3 e o Notion MCP.
+   Passo a passo em `crm-notion/SETUP-NOTION.md` §1.
+   _(Hermes/Telegram/modelo serão adicionados quando a Fase 2 for alcançada.)_
 
 ---
 
