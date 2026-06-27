@@ -5,7 +5,7 @@
 > Regra: a cada iteração, pegar a 1ª tarefa `PENDENTE` cujas dependências estão `CONCLUÍDA`,
 > implementar por completo, marcar `CONCLUÍDA` (1 linha), commitar, e parar.
 
-**Última atualização:** 2026-06-27 — **FASE 3 COMPLETA** (F3.3: templates-digest.md com 3 formatos fictícios — dia cheio/magro/Pronto-na-trilha). Próxima: F4.1.
+**Última atualização:** 2026-06-27 — F4.1 concluída (intake-interview/SKILL.md: 5 perguntas/lead, classificação+gate+trilha, gravação idempotente no CRM, resumo "comece por estes 3"). Próxima: F4.2.
 
 ---
 
@@ -48,7 +48,7 @@
 
 | ID | Tarefa | Depende de | Status |
 |----|--------|------------|--------|
-| F4.1 | `tutor/skills/intake-interview/SKILL.md` (roteiro, gate, gravação, resumo) | F0.2, F0.3, F1.1 | PENDENTE |
+| F4.1 | `tutor/skills/intake-interview/SKILL.md` (roteiro, gate, gravação, resumo) | F0.2, F0.3, F1.1 | CONCLUÍDA |
 | F4.2 | `runbooks/ROTINA-DIARIA.md` (rotina 1-2h/dia + ritual semanal) | F3.1, F4.1 | PENDENTE |
 | F4.3 | `docs/plans/CHECKLIST-GO-LIVE.md` (todos os bloqueios humanos consolidados) | F2.1, F1.2 | PENDENTE |
 
