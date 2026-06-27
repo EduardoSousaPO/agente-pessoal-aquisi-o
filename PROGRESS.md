@@ -5,7 +5,7 @@
 > Regra: a cada iteração, pegar a 1ª tarefa `PENDENTE` cujas dependências estão `CONCLUÍDA`,
 > implementar por completo, marcar `CONCLUÍDA` (1 linha), commitar, e parar.
 
-**Última atualização:** 2026-06-26 — **FASE 0 COMPLETA** (F0.5: PROMPT-SISTEMA.md com persona, 5 comportamentos e intake). Próxima: F1.1.
+**Última atualização:** 2026-06-27 — F1.1 concluída (MODELO-DADOS.md: 3 bases + trilha de aquecimento pré-pipeline, 5 MAPs, fórmulas gate/esfriando/engajamento). Próxima: F1.2.
 
 ---
 
@@ -23,7 +23,7 @@
 
 | ID | Tarefa | Depende de | Status |
 |----|--------|------------|--------|
-| F1.1 | `crm-notion/MODELO-DADOS.md` (3 bases, props, fórmulas "esfriando" + gate) | F0.1 | PENDENTE |
+| F1.1 | `crm-notion/MODELO-DADOS.md` (3 bases, props, fórmulas "esfriando" + gate) | F0.1 | CONCLUÍDA |
 | F1.2 | `crm-notion/SETUP-NOTION.md` (runbook bases + views + token) | F1.1 | PENDENTE |
 | F1.3 | `crm-notion/setup_notion.py` (script idempotente via Notion API) | F1.1 | PENDENTE |
 | F1.4 | `crm-notion/seed-exemplo.md` (2-3 leads fictícios) | F1.1 | PENDENTE |
