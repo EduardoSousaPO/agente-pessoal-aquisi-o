@@ -22,7 +22,7 @@ conteúdo**, não em "peça indicação aos amigos".
 | ID | Tarefa | Artefato | Status |
 |----|--------|----------|--------|
 | R1 | Diagnóstico da solução + cenário | `docs/referencia/estrategia/R1-diagnostico.md` | **CONCLUÍDA** |
-| R2 | Mullen na prática: quem aplicou com sucesso | `docs/referencia/estrategia/R2-mullen-cases-best-practices.md` | PENDENTE |
+| R2 | Mullen na prática: quem aplicou com sucesso | `docs/referencia/estrategia/R2-mullen-cases-best-practices.md` | **CONCLUÍDA** |
 | R3 | O advisor na era de IA + redes | `docs/referencia/estrategia/R3-era-ia-redes.md` | PENDENTE |
 | R4 | Cliente ideal: psicologia e jornada de decisão | `docs/referencia/estrategia/R4-cliente-ideal.md` | PENDENTE |
 | R5 | Prospecção sem warm market: cold-start solo | `docs/referencia/estrategia/R5-sem-warm-market.md` | PENDENTE |
@@ -37,3 +37,9 @@ conteúdo**, não em "peça indicação aos amigos".
   "sem warm market", da era de atenção e do risco do operador solo. 8 lacunas
   priorizadas + o que o motor já resolve bem. Sem pesquisa externa (análise do que
   existe), como manda o backlog.
+- **R2 — CONCLUÍDA** (iteração 2): casos reais (Soelberg/Benold/Cook/Kopp etc.) +
+  best practices. Achado-chave: a **palestra educativa em consultório** é o
+  cold-start de médico mais comprovado e cabe no caso do Eduardo; **COI ativo**
+  (contador/advogado de PJ médica) é o cold-start clássico; **estreitar o nicho**;
+  **regra dos 12 semanas** contra a dor de constância. Web search com fontes
+  citadas e níveis de confiança (OJay = direcional, mercado US).
