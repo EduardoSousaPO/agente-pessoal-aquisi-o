@@ -145,7 +145,7 @@ Esse é o hábito que segura o motor inteiro. Sem ele, nenhuma estratégia acima
 |---|---|---|
 | **Semanas 1-4** | Reativação + Núcleo de 25min virando hábito | Vitórias rápidas + constância antes de tudo |
 | **Semanas 3-8** | Ativar COI + rascunhar/lançar a isca de opt-in | Plantar o lento agora; abrir a porta do funil |
-| **Semanas 6-12** | 1º seminário da PJ médica + raio de conteúdo semanal | Ligar o motor renovável; autoridade própria |
+| **Semanas 6-12** | Raio de conteúdo semanal (motor renovável escolhido; seminário deferido) | Ligar o motor renovável; autoridade própria no seu ritmo |
 | **Contínuo** | Painel de atividade + placar semanal + regra dos 12 semanas | Sustentar o ânimo; não trocar de alavanca cedo demais |
 
 > **Honestidade final:** nada disso entrega 10 clientes em 90 dias. Entrega um **motor que gera leads de forma renovável**, **vitórias de atividade que sustentam seu ânimo**, e **um pipeline que matura em ~6 meses** — exatamente como o Mullen prevê. O pessimismo perde não porque os resultados chegam rápido, mas porque **você passa a medir, e a celebrar, a coisa certa todos os dias.**
