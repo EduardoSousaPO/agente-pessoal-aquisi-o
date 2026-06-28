@@ -25,7 +25,7 @@ conteúdo**, não em "peça indicação aos amigos".
 | R2 | Mullen na prática: quem aplicou com sucesso | `docs/referencia/estrategia/R2-mullen-cases-best-practices.md` | **CONCLUÍDA** |
 | R3 | O advisor na era de IA + redes | `docs/referencia/estrategia/R3-era-ia-redes.md` | **CONCLUÍDA** |
 | R4 | Cliente ideal: psicologia e jornada de decisão | `docs/referencia/estrategia/R4-cliente-ideal.md` | **CONCLUÍDA** |
-| R5 | Prospecção sem warm market: cold-start solo | `docs/referencia/estrategia/R5-sem-warm-market.md` | PENDENTE |
+| R5 | Prospecção sem warm market: cold-start solo | `docs/referencia/estrategia/R5-sem-warm-market.md` | **CONCLUÍDA** |
 | R6 | Processo diário sustentável + mindset | `docs/referencia/estrategia/R6-processo-habito-mindset.md` | PENDENTE |
 | R7 | Síntese + recomendações (entregável) | `docs/plans/SINTESE-RECOMENDACOES.md` | PENDENTE |
 
@@ -56,3 +56,10 @@ conteúdo**, não em "peça indicação aos amigos".
   afirmar. Sem **evento-gatilho** quase não troca → o estado saudável da maioria é
   **"#2 confiável"**. Mapa da jornada [0]→[5] com gatilhos de confiança/desconfiança
   + objeções e antídotos. Fontes BR (B3/BTG/FGV) + US (Kitces/FPA/PwC).
+- **R5 — CONCLUÍDA** (iteração 5, o coração): cold-start sem warm market. Tese:
+  warm = confiança emprestada; substituir por **tomar emprestada/fabricar**
+  confiança. **3 alavancas recomendadas:** 🥇 Reativação (vitória rápida, finita),
+  🥈 Seminário da PJ médica (motor renovável, 2º maior ROI, compliance-perfeito),
+  🥉 1 COI-âncora agora (maior ROI, lead-time longo). **Pago (frios) rebaixado a
+  piloto medido** (custo/inscrito engajado). Isca de opt-in "Guia da PJ Médica"
+  resolve o frio→inscrito. Propõe 6º MAP Autoridade/Conteúdo (⟶ R7). Kitces ROI data.
