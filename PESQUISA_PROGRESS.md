@@ -23,7 +23,7 @@ conteúdo**, não em "peça indicação aos amigos".
 |----|--------|----------|--------|
 | R1 | Diagnóstico da solução + cenário | `docs/referencia/estrategia/R1-diagnostico.md` | **CONCLUÍDA** |
 | R2 | Mullen na prática: quem aplicou com sucesso | `docs/referencia/estrategia/R2-mullen-cases-best-practices.md` | **CONCLUÍDA** |
-| R3 | O advisor na era de IA + redes | `docs/referencia/estrategia/R3-era-ia-redes.md` | PENDENTE |
+| R3 | O advisor na era de IA + redes | `docs/referencia/estrategia/R3-era-ia-redes.md` | **CONCLUÍDA** |
 | R4 | Cliente ideal: psicologia e jornada de decisão | `docs/referencia/estrategia/R4-cliente-ideal.md` | PENDENTE |
 | R5 | Prospecção sem warm market: cold-start solo | `docs/referencia/estrategia/R5-sem-warm-market.md` | PENDENTE |
 | R6 | Processo diário sustentável + mindset | `docs/referencia/estrategia/R6-processo-habito-mindset.md` | PENDENTE |
@@ -43,3 +43,9 @@ conteúdo**, não em "peça indicação aos amigos".
   (contador/advogado de PJ médica) é o cold-start clássico; **estreitar o nicho**;
   **regra dos 12 semanas** contra a dor de constância. Web search com fontes
   citadas e níveis de confiança (OJay = direcional, mercado US).
+- **R3 — CONCLUÍDA** (iteração 3): era de IA + redes. Achado-chave: a IA comoditiza
+  a **informação** (onde o Eduardo não compete) e **valoriza** a relação fiduciária
+  (87% dos US$250k+ querem humano). Conteúdo = máquina de confiança de lead-time
+  **longo** (não é o motor dos 1ºs 6 meses). Modelo viável p/ 1 pessoa: **hub-and-spoke
+  + repurpose + carona na LDC**, 1 peça-âncora/semana nichada → opt-in da news. Não
+  virar finfluencer. Fontes Kitces/WEF/Fortune (alta) + agências (direcional).
