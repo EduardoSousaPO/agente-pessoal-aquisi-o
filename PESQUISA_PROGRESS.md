@@ -26,7 +26,7 @@ conteúdo**, não em "peça indicação aos amigos".
 | R3 | O advisor na era de IA + redes | `docs/referencia/estrategia/R3-era-ia-redes.md` | **CONCLUÍDA** |
 | R4 | Cliente ideal: psicologia e jornada de decisão | `docs/referencia/estrategia/R4-cliente-ideal.md` | **CONCLUÍDA** |
 | R5 | Prospecção sem warm market: cold-start solo | `docs/referencia/estrategia/R5-sem-warm-market.md` | **CONCLUÍDA** |
-| R6 | Processo diário sustentável + mindset | `docs/referencia/estrategia/R6-processo-habito-mindset.md` | PENDENTE |
+| R6 | Processo diário sustentável + mindset | `docs/referencia/estrategia/R6-processo-habito-mindset.md` | **CONCLUÍDA** |
 | R7 | Síntese + recomendações (entregável) | `docs/plans/SINTESE-RECOMENDACOES.md` | PENDENTE |
 
 ---
@@ -63,3 +63,10 @@ conteúdo**, não em "peça indicação aos amigos".
   🥉 1 COI-âncora agora (maior ROI, lead-time longo). **Pago (frios) rebaixado a
   piloto medido** (custo/inscrito engajado). Isca de opt-in "Guia da PJ Médica"
   resolve o frio→inscrito. Propõe 6º MAP Autoridade/Conteúdo (⟶ R7). Kitces ROI data.
+- **R6 — CONCLUÍDA** (iteração 6): processo + mindset. Tese: constância falha por
+  **engenharia** (recompensa adiada, seca de sins, solo sem accountability), não por
+  fraqueza. Virada de chave: medir **atividade (leading), não conversão (lagging)** —
+  "a confiança vem de fazer, não de fechar" (Mullen Lição #1). Ritual: núcleo
+  inquebrável de ~25min (Tutor pré-carrega) + alavanca rotativa + piso mínimo +
+  "nunca falhe 2x" + streaks (Atomic Habits). Propõe **6º comportamento do Tutor:
+  "Celebra e sustenta o ânimo"** (⟶ R7, requer aprovação). Fontes Clear/Mullen.
