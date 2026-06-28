@@ -116,12 +116,26 @@ US$600k. Eduardo opera em **1-2h/dia**: a *estrutura* Mullen é mantida, a
 | 1 reunião/dia | **2-3 toques de valor/dia + reuniões agendadas** | conta toques registrados/dia |
 | Conversão prospect→cliente ~30% | **mantém ~30%** (qualidade, não tempo) | conversão por MAP |
 
-**Painel semanal que o Tutor lê e reporta:**
-- Reuniões da semana — **x / 3**
-- Prospects novos — **x / 1**
-- Pipeline total — **x / 30**
-- **Leads esfriando** (sem toque há +N dias) — ⚠️ lista (N default = 14; ver `USER.md`)
-- Conversão por MAP/nicho
+**Painel — medir ATIVIDADE (leading), não conversão (lagging).** [RECONSTR. · R6]
+A confiança vem de **fazer**, não de **fechar** (Mullen, Top Advisor Mindset). No
+início a conversão é quase sempre "ainda não" — medir por ela alimenta o pessimismo.
+O Tutor lidera o relatório pelo que Eduardo **controla**:
+
+*LEADING (fonte de ânimo diário — destaque no topo):*
+- **Toques registrados/dia** — meta **2-3** ✅ (controlável)
+- **Reuniões de conexão marcadas/semana** — **2-3**
+- **Inflow:** novos suspects entrando na trilha/semana (saúde futura do funil)
+- **Leads esquentando:** quem subiu de degrau na jornada (cada um é uma vitória)
+- **Streak** de dias com o ritual cumprido (ver `runbooks/ROTINA-DIARIA.md`)
+
+*LAGGING (medido, mas não é a fonte de ânimo diário):*
+- Prospects novos (gate ✓)/semana — **x / 1** · Pipeline total — **x / ~25-30**
+- **Leads esfriando** (sem toque há +N dias; N default 14, `USER.md` §5) — ⚠️ lista
+- Conversão por MAP/nicho · clientes
+
+> **Reenquadre honesto [WP §9]:** o pipeline de ~6 meses e o estado "#2 até o gatilho"
+> **não são você falhando — é o modelo certo funcionando.** Medir no horizonte errado
+> é o que cria o pessimismo.
 
 **A matemática do pipeline (referência Mullen) [WP]:** pipeline-alvo 50 prospects
 em 26 semanas → ~2 prospects novos/sem → 5 connecting appointments/sem →

@@ -18,8 +18,9 @@
 | Nicho primário (médicos) | **TRAVADO** | §3 | — |
 | Tom de voz (princípios) | **TRAVADO** | §4 | — |
 | **Patamar de patrimônio (R$)** | **TRAVADO — R$ 1 mi+** | §3.1 | — |
-| **MAPs (5 ativos)** | **TRAVADO** | §3.2 | — |
+| **MAPs ativos** | **TRAVADO (reestrut. 28/06)** | §3.2 | — |
 | **Amostras de tom de voz** | **TRAVADO** | §4.1 | — |
+| **Isca de opt-in (Guia PJ Médica)** | **TRAVADO — produção pendente** | §3.4 | porta frio→inscrito |
 | **Trilha de aquecimento (leads frios)** | **TRAVADO** | §3.3 | modelo Notion (Fase 1) deve incluí-la |
 | Janela "esfriando" (N dias) | **TRAVADO (default 14)** | §5 | alerta de leads frios (ajustável) |
 
@@ -70,22 +71,29 @@
   `Qualified`. (Empresários tendem a vir bem acima do piso; o piso único só
   simplifica o gate — não impede registrar tickets maiores.)
 
-### 3.2 Os 5 MAPs ativos [TRAVADO]
-Mullen pede **5 MAPs ativos** com mix de lead-time curto e longo
-(`metodo-mullen/SKILL.md` §3/§4). Definidos com Eduardo:
+### 3.2 Os MAPs ativos [TRAVADO · reestruturado 2026-06-28 pós-pesquisa R5/R7]
+Mullen pede **5 MAPs ativos** com mix de lead-time. A pesquisa (R5) mostrou que os
+MAPs originais eram **bases finitas/frias sem fonte renovável** — então o foco mudou
+de "outbound sobre listas" para **3 alavancas de confiança + 1 motor de conteúdo**,
+com os MAPs de empresários/executivos **pausados** até o nicho médico girar.
 
-| # | MAP | Lead-time | Fonte da lista | Abordagem |
-|---|-----|-----------|----------------|-----------|
-| 1 | **Médicos quentes** | **Curto** | Leitores engajados da newsletter LDC + médicos ex-Santander | Gancho news/Santander → connecting appointment direta |
-| 2 | **Médicos frios** (scraping/campanhas) | **Longo** | Listas raspadas + campanhas de internet | **Trilha de aquecimento §3.3** (news → engajamento → toque 1:1 → reunião) |
-| 3 | **Mercado natural (Santander, não-médicos)** | **Curto** | Ex-clientes/contatos do Santander | Transferência de confiança → reunião |
-| 4 | **Empresários / donos de empresa** | **Longo** | Associações, indicações, rede | Ângulo liquidez/sucessão; ticket alto |
-| 5 | **Executivos / pré-aposentados** | **Médio** | Empresas-âncora, LinkedIn, indicações | Rollover de previdência, planejamento de renda |
+| # | MAP ativo | Papel | Lead-time | Abordagem |
+|---|-----------|-------|-----------|-----------|
+| A | **Reativação** (médicos quentes da news + ex-Santander) | **Vitória rápida** | Curto | Resíduo de warm: reabrir conversa com o gancho mais quente/atual. **Base finita — ponte, não motor.** |
+| B | **Médicos frios** (scraping/campanha) | **Piloto medido** | Longo | NÃO é mais "motor de volume". Alimenta a **isca de opt-in** (§3.4) → news → trilha (§3.3). Métrica de corte: **custo por inscrito engajado** (não por clique); só escala se sustentável. |
+| C | **COI-âncora** (1 contador OU advogado de PJ médica de Goiânia) | **Maior ROI** | Longo (~18 m) | **Ativar agora** (adiar custa caro). Reciprocidade primeiro — indicar antes de pedir (talk-tracks §3). 1 COI ativo > 5 passivos. |
+| D | **Autoridade/Conteúdo** (newsletter LDC + "raio pessoal") | **Motor renovável** | Longo (8-16 m) | A fonte renovável que faltava. **Content-led, SEM palco** (decisão de Eduardo 2026-06-28: seminário/palestra fora por ora). 1x/semana Eduardo aplica a análise do Luciano ao mundo da PJ médica → alimenta a isca/news. |
 
-> Mix de lead-time saudável: 2 curtos (1,3), 1 médio (5), 2 longos (2,4) — não fica
-> refém de uma fonte só. O Tutor mede conversão e lead-time **por MAP** (qual rende).
-> COIs (contadores/advogados) ainda **não** são MAP ativo — entram quando Eduardo
-> quiser (lead-time ~18 meses; ver talk-tracks §3).
+> **Mix de lead-time:** 1 curto (A, reativação) + 3 longos renováveis (B, C, D). A
+> reativação financia o ânimo enquanto C e D maturam. O Tutor mede conversão e
+> lead-time **por MAP**.
+>
+> **PAUSADOS (não ativos agora — reativar quando o nicho médico girar):**
+> Empresários/donos de empresa e Executivos/pré-aposentados. Eduardo optou por **não
+> dispersar** (sem LinkedIn outbound / sem construir essas listas ainda). Foco = médico.
+>
+> **Nicho:** mantido **"médicos" amplo** — Eduardo **não** aprovou estreitar para
+> sub-perfil por ora (proposta R7 §2.2 fica em aberto, reavaliar depois).
 
 ### 3.3 Trilha de aquecimento de leads frios (escada Mullen) [TRAVADO]
 Lead frio (médico raspado, campanha) é **`suspect`**, não lead: sem permissão, sem
@@ -107,6 +115,19 @@ frio→morno ("Dr. X abriu as últimas 4 edições — hora do toque pessoal").
 > pré-pipeline** para suspects, com sub-status (frio/inscrito/engajado/pronto) e um
 > sinal de engajamento com a news. A connecting appointment (e o gate) só se aplicam
 > a quem chega em "pronto".
+
+### 3.4 Isca de opt-in — a porta única de entrada [TRAVADO 2026-06-28 · R5 §4]
+O passo **frio→inscrito** da trilha (§3.3) precisava de uma porta. Decisão: produzir
+uma **isca nichada** como CTA único de todos os canais (MAP B, C, D apontam pra ela).
+
+- **Isca:** **"Guia de Blindagem Patrimonial e Eficiência Tributária para a PJ Médica"**
+  (e-book/checklist/mini-aula sobre a dor nº 1 do médico). Brief em
+  `docs/plans/ISCA-PJ-MEDICA-BRIEF.md`.
+- **Opt-in sem fricção:** só nome + contato (cada campo extra derruba conversão).
+- **Fluxo:** isca → entra na **newsletter** (máquina de aquecimento) → sobe a escada
+  `inscrito → engajado → pronto` (§3.3).
+- **Compliance:** educativa, sem promessa de rentabilidade, sem recomendação (§6).
+- **Status:** aprovada; **tarefa de produção** (Eduardo escreve/aprova o conteúdo).
 
 ## 4. Tom de voz (calibrar o Tutor e os rascunhos de toque) [TRAVADO]
 
@@ -145,7 +166,13 @@ a pessoa responde.
 
 ## 5. Preferências de cadência [TRAVADO; N ajustável]
 
-- **Máx. 3 toques** por pessoa, espaçados — "respeito > insistência".
+- **Cadência de toques (reconciliada · R5 §5):** um lead frio precisa de **7-10
+  toques** antes de agendar, e a conversão vem dos **toques 4-7** — mas isso **não**
+  contradiz o "máx. 3 toques". Divisão de trabalho: os 7-10 são **majoritariamente
+  passivos** (newsletter semanal + conteúdo fazem a presença); os **~3 toques
+  pessoais 1:1** (o "máx. 3", "respeito > insistência") são gastos **só em quem já
+  esquentou** (`Trilha = ✅ Pronto`). Não desistir do frio no toque 1-2 — é a news
+  trabalhando.
 - **Confirmação na véspera** das reuniões (reduz no-show).
 - **Ir até o lead** (consultório) — derruba objeção de tempo/deslocamento.
 - **Escassez honesta** (janela real de agenda), nunca fabricada.

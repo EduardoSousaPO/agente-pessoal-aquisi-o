@@ -152,15 +152,23 @@ Esse é o hábito que segura o motor inteiro. Sem ele, nenhuma estratégia acima
 
 ---
 
-## 8. Decisões que dependem só do Eduardo (para destravar)
-1. Aprovar (ou ajustar) a reestruturação dos MAPs + o 6º MAP "Autoridade/Conteúdo" (§2.1).
-2. Escolher o(s) sub-perfil(is) do nicho médico para testar (§2.2).
-3. Escolher o **1 COI-âncora** (nome concreto) e topar "indicar primeiro" (§2.3, ação 2).
-4. Aprovar o tema/formato da **isca de opt-in** (§2.4, ação 3).
-5. Aprovar o 6º comportamento do Tutor "Celebra e sustenta o ânimo" (§2.6).
-6. Aprovar o **Núcleo de 25min** como `ROTINA-DIARIA.md` v2 (§3).
+## 8. Registro de decisões (Eduardo, 2026-06-28)
 
-> Quando o Eduardo aprovar, os itens viram edição da constituição (`USER.md`/`SKILL.md`/`PROMPT-SISTEMA.md`) e o runbook `ROTINA-DIARIA.md` v2 — **só então**, e só com o "ok" dele.
+| Proposta | Decisão | Onde foi aplicado |
+|---|---|---|
+| §2.1 Reestruturar MAPs + 6º MAP Autoridade/Conteúdo | ✅ **APROVADO** | `USER.md` §3.2 (3 alavancas + conteúdo; empresários/executivos PAUSADOS) |
+| §2.2 Estreitar o nicho (sub-perfil médico) | ⏸️ **DEFERIDO** | mantido "médicos" amplo (`USER.md` §3.2 nota); reavaliar depois |
+| §2.3 Ativar 1 COI-âncora agora | ✅ **APROVADO** | MAP C ativo (`USER.md` §3.2); ação da semana — Eduardo escolhe o nome |
+| §2.4 Isca de opt-in "Guia da PJ Médica" | ✅ **APROVADO** | `USER.md` §3.4 + brief `docs/plans/ISCA-PJ-MEDICA-BRIEF.md` (produção pendente) |
+| §2.5 Reconciliar cadência (7-10 toques passivos) | ✅ **APROVADO** | `USER.md` §5 |
+| §2.6 6º comportamento do Tutor "Celebra e sustenta o ânimo" | ✅ **APROVADO** | `PROMPT-SISTEMA.md` comportamento 6 |
+| §3 Núcleo de 25min como ROTINA v2 | ✅ **APROVADO** | `runbooks/ROTINA-DIARIA.md` v2 |
+| §5 Painel LEADING vs LAGGING | ✅ **APROVADO** | `metodo-mullen/SKILL.md` §3 |
+| Recomendação 2 (seminário/palestra) | ⏸️ **DEFERIDO** | Eduardo optou por **conteúdo, sem palco** → motor renovável = MAP D (conteúdo) |
+
+> **Ações no mundo (de Eduardo, não edição de arquivo):** (1) começar a reativação
+> esta semana; (2) escolher e abordar 1 COI-âncora; (3) escrever/aprovar a isca.
+> Ver §6 (Top 3 ações) e `ISCA-PJ-MEDICA-BRIEF.md`.
 
 ---
 
