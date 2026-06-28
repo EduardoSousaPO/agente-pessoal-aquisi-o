@@ -27,7 +27,7 @@ conteúdo**, não em "peça indicação aos amigos".
 | R4 | Cliente ideal: psicologia e jornada de decisão | `docs/referencia/estrategia/R4-cliente-ideal.md` | **CONCLUÍDA** |
 | R5 | Prospecção sem warm market: cold-start solo | `docs/referencia/estrategia/R5-sem-warm-market.md` | **CONCLUÍDA** |
 | R6 | Processo diário sustentável + mindset | `docs/referencia/estrategia/R6-processo-habito-mindset.md` | **CONCLUÍDA** |
-| R7 | Síntese + recomendações (entregável) | `docs/plans/SINTESE-RECOMENDACOES.md` | PENDENTE |
+| R7 | Síntese + recomendações (entregável) | `docs/plans/SINTESE-RECOMENDACOES.md` | **CONCLUÍDA** |
 
 ---
 
@@ -70,3 +70,45 @@ conteúdo**, não em "peça indicação aos amigos".
   inquebrável de ~25min (Tutor pré-carrega) + alavanca rotativa + piso mínimo +
   "nunca falhe 2x" + streaks (Atomic Habits). Propõe **6º comportamento do Tutor:
   "Celebra e sustenta o ânimo"** (⟶ R7, requer aprovação). Fontes Clear/Mullen.
+- **R7 — CONCLUÍDA** (iteração 7, o entregável): `docs/plans/SINTESE-RECOMENDACOES.md`.
+  Integra R1-R6 em decisões: tese central, 6 ajustes propostos à constituição (todos
+  ⟶ requer aprovação), processo diário "apaixonante", plano de conteúdo, métricas
+  leading vs lagging, Top 3 ações da semana + o 1 hábito (Núcleo de 25min). Sem nova
+  pesquisa — síntese.
+
+---
+
+## ✅ PESQUISA CONCLUÍDA
+
+Backlog R1-R7 completo (7 commits, 1 por tarefa). Entregável: `docs/plans/SINTESE-RECOMENDACOES.md`.
+
+### Os 3 maiores insights
+1. **O motor gere o pipeline, mas quase não o alimenta.** A engenharia de método
+   (gate, nurturing, métricas) é sólida; a lacuna real é o **topo de funil** — falta
+   uma fonte renovável de leads que substitua o warm market. A pesquisa toda
+   reorienta o esforço do "gerir" para o "gerar". (R1)
+2. **Sem warm market = fabricar/tomar emprestada confiança.** As 3 alavancas de
+   melhor esforço×retorno: **reativação** (vitória rápida, finita), **seminário da
+   PJ médica** (motor renovável, 2º maior ROI, compliance-perfeito) e **1 COI-âncora**
+   (maior ROI, lead-time longo). Pago/frios vira **piloto medido**, não motor. E o
+   fee-based do Eduardo é o **antídoto estrutural** da ferida do afluente BR (conflito
+   de interesse) — mas precisa **provar** (case math), não afirmar. (R2-R5)
+3. **A constância é problema de engenharia, não de força de vontade.** Medir
+   **atividade (leading), não conversão (lagging)** — "a confiança vem de fazer, não
+   de fechar" (Mullen Lição #1). Ritual com núcleo inquebrável de 25min + piso mínimo
+   + streaks (Atomic Habits). O Tutor precisa virar **treinador**, não só fiscal. (R6)
+
+### Ações propostas (todas ⟶ requerem aprovação de Eduardo)
+- Reestruturar MAPs + adicionar **6º MAP "Autoridade/Conteúdo"**; rebaixar campanha
+  de frios a piloto medido.
+- **Estreitar** o nicho médico para 1-2 sub-perfis.
+- **Ativar 1 COI-âncora** já (contador/advogado de PJ médica).
+- Criar a **isca de opt-in** "Guia da PJ Médica".
+- Dar ao Tutor o **6º comportamento "Celebra e sustenta o ânimo"**.
+- Adotar o **Núcleo de 25min** como `ROTINA-DIARIA.md` v2.
+
+**Top 3 da semana:** reativação (10-15 contatos) · ativar 1 COI · rascunhar a isca.
+**O 1 hábito pra amanhã:** o Núcleo de 25min, mesmo horário, com piso mínimo, nunca
+falhar 2x.
+
+> Nada na constituição travada foi auto-editado. As propostas esperam o "ok" do Eduardo.
