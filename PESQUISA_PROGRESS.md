@@ -24,7 +24,7 @@ conteúdo**, não em "peça indicação aos amigos".
 | R1 | Diagnóstico da solução + cenário | `docs/referencia/estrategia/R1-diagnostico.md` | **CONCLUÍDA** |
 | R2 | Mullen na prática: quem aplicou com sucesso | `docs/referencia/estrategia/R2-mullen-cases-best-practices.md` | **CONCLUÍDA** |
 | R3 | O advisor na era de IA + redes | `docs/referencia/estrategia/R3-era-ia-redes.md` | **CONCLUÍDA** |
-| R4 | Cliente ideal: psicologia e jornada de decisão | `docs/referencia/estrategia/R4-cliente-ideal.md` | PENDENTE |
+| R4 | Cliente ideal: psicologia e jornada de decisão | `docs/referencia/estrategia/R4-cliente-ideal.md` | **CONCLUÍDA** |
 | R5 | Prospecção sem warm market: cold-start solo | `docs/referencia/estrategia/R5-sem-warm-market.md` | PENDENTE |
 | R6 | Processo diário sustentável + mindset | `docs/referencia/estrategia/R6-processo-habito-mindset.md` | PENDENTE |
 | R7 | Síntese + recomendações (entregável) | `docs/plans/SINTESE-RECOMENDACOES.md` | PENDENTE |
@@ -49,3 +49,10 @@ conteúdo**, não em "peça indicação aos amigos".
   **longo** (não é o motor dos 1ºs 6 meses). Modelo viável p/ 1 pessoa: **hub-and-spoke
   + repurpose + carona na LDC**, 1 peça-âncora/semana nichada → opt-in da news. Não
   virar finfluencer. Fontes Kitces/WEF/Fortune (alta) + agências (direcional).
+- **R4 — CONCLUÍDA** (iteração 4): psicologia + jornada do afluente. Achado-chave:
+  afluente compra **confiança, não performance** (89% da satisfação é relação). O
+  médico BR já chega **queimado** (conflito de interesse é a ferida) — e o fee-based
+  do Eduardo é o **antídoto estrutural**, mas precisa **provar** (case math), não
+  afirmar. Sem **evento-gatilho** quase não troca → o estado saudável da maioria é
+  **"#2 confiável"**. Mapa da jornada [0]→[5] com gatilhos de confiança/desconfiança
+  + objeções e antídotos. Fontes BR (B3/BTG/FGV) + US (Kitces/FPA/PwC).
