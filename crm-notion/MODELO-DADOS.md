@@ -29,9 +29,9 @@ ZONA B — PIPELINE MULLEN (gate + connecting appointment valem aqui)
 
 As duas zonas moram na **mesma base `Leads`**: o campo **Estágio** diz se o lead
 está em aquecimento (`Suspect`) ou no pipeline; o campo **Trilha de aquecimento** só
-é usado enquanto `Estágio = Suspect`. Os leads "quentes" (MAP 1/3 — leitores
-engajados e ex-Santander) **já entram direto** em `Lead pré-qualificado`, pulando a
-trilha.
+é usado enquanto `Estágio = Suspect`. Os leads "quentes" (MAP `A · Reativação` — médicos
+engajados da news e ex-Santander) **já entram direto** em `Lead pré-qualificado`,
+pulando a trilha.
 
 **Relações:** `Toques` → muitos por `Lead`; `Gatilhos` → muitos por `Lead`.
 
@@ -47,19 +47,22 @@ A entidade central. Tipos de propriedade na sintaxe do Notion.
 | **Nome** | Title | "Dr. Exemplo Cardiologista" (fictício no doc) |
 | **Contato** | Phone / Email / Text | PII — só no Notion. Use o tipo que preferir; pode haver os dois. |
 | **Origem** | Select | `Newsletter LDC` · `Ex-Santander` · `Indicação` · `Campanha Goiânia` · `Scraping/lista` · `Evento` · `Outro` |
-| **MAP / Nicho** | Select | os **5 MAPs** (§1.2 abaixo) |
+| **MAP / Nicho** | Select | os MAPs ativos A-D + pausados (§1.2 abaixo) |
 
-### 1.2 MAP / Nicho — as 5 opções de select [TRAVADO, USER.md §3.2]
-| Opção (select) | Lead-time | Cor sugerida |
-|---|---|---|
-| `1 · Médicos quentes` | Curto | verde |
-| `2 · Médicos frios` | Longo | azul |
-| `3 · Mercado natural (Santander)` | Curto | verde |
-| `4 · Empresários` | Longo | roxo |
-| `5 · Executivos / pré-aposentados` | Médio | amarelo |
+### 1.2 MAP / Nicho — opções de select [TRAVADO, USER.md §3.2 · reestrut. 28/06]
+| Opção (select) | Papel | Lead-time | Cor sugerida |
+|---|---|---|---|
+| `A · Reativação` (médicos quentes + ex-Santander) | vitória rápida | Curto | verde |
+| `B · Médicos frios` (piloto via isca) | piloto medido | Longo | azul |
+| `C · COI-âncora` (contador/advogado de PJ médica) | maior ROI | Longo | laranja |
+| `D · Autoridade/Conteúdo` (raio pessoal + isca) | motor renovável | Longo | roxo |
+| `Empresários (pausado)` | inativo | — | cinza |
+| `Executivos (pausado)` | inativo | — | cinza |
 
-> COIs (contadores/advogados) ainda **não** são MAP ativo — não criar a opção até
-> Eduardo ativar (talk-tracks §3).
+> **MAPs ativos = A, B, C, D** (`USER.md` §3.2). Médicos quentes e ex-Santander entram
+> ambos em **A · Reativação**. **C · COI-âncora** agora é MAP ativo (era "fora dos
+> MAPs"). Empresários/Executivos ficam como opção **inativa (pausada)** — não
+> prospectar até o nicho médico girar.
 
 ### 1.3 Estágio (zona A + zona B) — propriedade **Status**
 Use o tipo **Status** do Notion (permite kanban com grupos). Opções e grupo:
@@ -230,8 +233,8 @@ O modelo foi desenhado para suportar, sem campos extras:
 
 ## 5. Resumo do esquema (para o script F1.3)
 ```
-Leads      (Title Nome) + Origem, MAP/Nicho(5), Estágio(8 status),
-           Trilha de aquecimento(4), Aberturas/Cliques recentes,
+Leads      (Title Nome) + Origem, MAP/Nicho(A-D + pausados), Estágio(8 status),
+           Trilha de aquecimento(4 sub-status), Aberturas/Cliques recentes,
            Sinal de engajamento(formula), 3 checkboxes do Gate,
            Qualificado?(formula), Gate·status(formula),
            Patrimônio, Perfil de interesse, Banco atual, Datas pessoais,

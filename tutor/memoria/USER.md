@@ -97,7 +97,10 @@ com os MAPs de empresários/executivos **pausados** até o nicho médico girar.
 >
 > **MAP D é operacionalizado pela skill `tutor/skills/conteudo-autoridade/`** (raio
 > pessoal semanal + repurpose + isca). Prioridade de Eduardo: gerar interesse →
-> entregar valor → aquecer → converter; compliance é backstop leve, não censor.
+> entregar valor → aquecer → converter. **Escopo:** compliance é backstop leve (não
+> censor) **no conteúdo público/marketing**. As regras **duras** dos toques 1:1 e do
+> processo (envio sempre de Eduardo, sem recomendação personalizada por mensagem, sem
+> promessa de rentabilidade — §6) **permanecem intactas**.
 
 ### 3.3 Trilha de aquecimento de leads frios (escada Mullen) [TRAVADO]
 Lead frio (médico raspado, campanha) é **`suspect`**, não lead: sem permissão, sem

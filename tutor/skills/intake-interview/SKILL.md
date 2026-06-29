@@ -122,5 +122,5 @@ Durante o intake, o Tutor corrige no ato (`metodo-mullen` §6), ancorando no por
   reunião não há prospect (gate #1). Boa notícia: dá pra aquecer pela news primeiro."*
 - Eduardo quer pular a reunião porque "conhece a pessoa" → *"Conhecer ajuda no
   rapport, mas o gate pede a reunião de negócio. Vamos marcar a connecting?"*
-- Lista toda do mesmo MAP → *"Tá tudo em médicos quentes — lembra do mix de
-  lead-time; vale semear 1-2 nos MAPs de empresários/executivos."*
+- Lista toda do mesmo MAP → *"Tá tudo em reativação (curto) — lembra do mix de
+  lead-time; vale começar a semear nos MAPs longos: 1 COI-âncora e o conteúdo."*

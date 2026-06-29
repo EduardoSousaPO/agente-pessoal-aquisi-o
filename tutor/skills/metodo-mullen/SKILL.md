@@ -195,8 +195,9 @@ Tipos permitidos (verbatim Mullen + adaptação LDC):
 - Todo toque é **personalizado** (posições/metas/datas/perfil do lead). Newsletter
   genérica disparada em massa **viola** "trate como cliente" — é o erro nº 4.
 - Qualidade > quantidade. Regular o bastante para manter top-of-mind, **sem virar
-  spam**. (Eduardo já pratica: **máx. 3 toques** espaçados por pessoa; "respeito >
-  insistência".)
+  spam**. Cadência reconciliada (`USER.md` §5): o **"máx. 3 toques"** refere-se aos
+  toques **pessoais 1:1** (gastos só em quem já esquentou); a presença em escala
+  (newsletter/conteúdo) é **passiva e contínua** — não conta no limite de 3.
 - O Mullen **não fixa um número** de toques — fixa o padrão de qualidade.
 
 **Compliance LDC (guardrail duro):** o toque **nunca** promete rentabilidade nem
