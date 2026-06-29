@@ -94,6 +94,10 @@ com os MAPs de empresários/executivos **pausados** até o nicho médico girar.
 >
 > **Nicho:** mantido **"médicos" amplo** — Eduardo **não** aprovou estreitar para
 > sub-perfil por ora (proposta R7 §2.2 fica em aberto, reavaliar depois).
+>
+> **MAP D é operacionalizado pela skill `tutor/skills/conteudo-autoridade/`** (raio
+> pessoal semanal + repurpose + isca). Prioridade de Eduardo: gerar interesse →
+> entregar valor → aquecer → converter; compliance é backstop leve, não censor.
 
 ### 3.3 Trilha de aquecimento de leads frios (escada Mullen) [TRAVADO]
 Lead frio (médico raspado, campanha) é **`suspect`**, não lead: sem permissão, sem

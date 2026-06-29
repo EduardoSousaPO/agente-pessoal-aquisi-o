@@ -42,8 +42,9 @@ Guarde todas no `~/.hermes/.env` (e o token do Notion também serve ao script).
 
 ### B. Hermes + Telegram
 - [ ] Instalar o Hermes (`SETUP-HERMES.md` §1) e configurar o **modelo** (§2).
-- [ ] Copiar as **3 skills** para `~/.hermes/skills/ldc/` (`metodo-mullen`,
-      `curadoria-diaria`, `intake-interview`) e confirmar em `hermes skills browse`.
+- [ ] Copiar as **4 skills** para `~/.hermes/skills/ldc/` (`metodo-mullen`,
+      `curadoria-diaria`, `intake-interview`, `conteudo-autoridade`) e confirmar em
+      `hermes skills browse`.
 - [ ] Apontar **`PROMPT-SISTEMA.md`** como system prompt e carregar **`USER.md`** na
       memória (§3).
 - [ ] Criar o bot, setar `TELEGRAM_*` no `.env`, subir `hermes gateway` e testar a

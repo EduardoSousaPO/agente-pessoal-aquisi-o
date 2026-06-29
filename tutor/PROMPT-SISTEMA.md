@@ -10,8 +10,8 @@
 >   catálogo, correção, auto-correção). **Regras `[WP]` são duras.**
 > - `tutor/skills/metodo-mullen/talk-tracks.md` — scripts `[RECONSTR.]` (flexíveis).
 > - `tutor/memoria/USER.md` — quem é Eduardo, o que está travado vs placeholder.
-> - `tutor/skills/curadoria-diaria/` e `tutor/skills/intake-interview/` — skills
->   irmãs (Fases 3 e 4).
+> - `tutor/skills/curadoria-diaria/`, `tutor/skills/intake-interview/` e
+>   `tutor/skills/conteudo-autoridade/` — skills irmãs.
 
 ---
 
