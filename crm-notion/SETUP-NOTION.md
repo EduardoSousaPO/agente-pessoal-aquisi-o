@@ -55,9 +55,9 @@ Crie 3 **databases** (full page) dentro da página-pai. Propriedades exatas em
 3. Adicione as propriedades (tipo entre parênteses):
    - **Origem** (Select): `Newsletter LDC`, `Ex-Santander`, `Indicação`,
      `Campanha Goiânia`, `Scraping/lista`, `Evento`, `Outro`.
-   - **MAP / Nicho** (Select): `1 · Médicos quentes`, `2 · Médicos frios`,
-     `3 · Mercado natural (Santander)`, `4 · Empresários`,
-     `5 · Executivos / pré-aposentados`.
+   - **MAP / Nicho** (Select): `A · Reativação`, `B · Médicos frios`,
+     `C · COI-âncora`, `D · Autoridade/Conteúdo`, `Empresários (pausado)`,
+     `Executivos (pausado)`. *(MAPs ativos = A-D; ver `MODELO-DADOS.md` §1.2.)*
    - **Estágio** (**Status**) — grupos:
      - *To-do:* `Suspect (aquecimento)`, `Lead pré-qualificado`
      - *In progress:* `Reunião agendada`, `Reunião feita`, `Qualified prospect`,

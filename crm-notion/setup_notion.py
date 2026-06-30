@@ -101,8 +101,8 @@ ESTAGIO_OPCOES = [
     "Reunião feita", "Qualified prospect", "Nurturing", "Cliente", "Perdido / Inativo",
 ]
 MAP_OPCOES = [
-    "1 · Médicos quentes", "2 · Médicos frios", "3 · Mercado natural (Santander)",
-    "4 · Empresários", "5 · Executivos / pré-aposentados",
+    "A · Reativação", "B · Médicos frios", "C · COI-âncora",
+    "D · Autoridade/Conteúdo", "Empresários (pausado)", "Executivos (pausado)",
 ]
 TRILHA_OPCOES = ["❄️ Frio", "📩 Inscrito (opt-in news)", "🔆 Engajado", "✅ Pronto"]
 
