@@ -17,8 +17,9 @@ Referência de fórmulas/views: crm-notion/SETUP-NOTION.md
 
 LIMITAÇÕES da Notion API (tratadas, não escondidas):
   - A API NÃO cria propriedade do tipo `status` → `Estágio` é criado como `select`
-    com as mesmas 8 opções. As fórmulas usam `.name`, que funciona igual para
-    select e status. (Opcional: converter para Status na UI depois.)
+    com as mesmas 8 opções. Em `select`, a comparação é `prop("Estágio") == "..."`
+    (SEM `.name` — `.name` dá "type error" em select). Se você converter `Estágio`
+    para Status na UI depois, aí sim adicione `.name` nas 2 fórmulas que o referenciam.
   - Criação de `rollup` e `formula` via API pode ser rejeitada dependendo da versão
     do workspace. O script TENTA criá-las e, se a API recusar, avisa exatamente o
     que finalizar à mão (SETUP-NOTION.md §2.4/§4) — sem falhar o resto.
@@ -106,13 +107,14 @@ MAP_OPCOES = [
 ]
 TRILHA_OPCOES = ["❄️ Frio", "📩 Inscrito (opt-in news)", "🔆 Engajado", "✅ Pronto"]
 
-# Fórmulas canônicas (Formula 2.0; Status/Select usam .name) — SETUP-NOTION.md §4
+# Fórmulas canônicas (Formula 2.0) — SETUP-NOTION.md §4.
+# Estágio é SELECT → comparado sem `.name`. (Se virar Status na UI, add `.name`.)
 F_QUALIFICADO = (
     'if(prop("Gate ✓ Reunião feita") and prop("Gate ✓ Patrimônio R$1mi+") '
     'and prop("Gate ✓ Receptivo (stay engaged)"), "✅ Qualified", "⛔ Ainda não (falta gate)")'
 )
 F_GATE_STATUS = (
-    'if((prop("Estágio").name == "Qualified prospect" or prop("Estágio").name == "Nurturing") '
+    'if((prop("Estágio") == "Qualified prospect" or prop("Estágio") == "Nurturing") '
     'and not (prop("Gate ✓ Reunião feita") and prop("Gate ✓ Patrimônio R$1mi+") '
     'and prop("Gate ✓ Receptivo (stay engaged)")), "🚨 Qualified sem os 3 ✓ — revisar", "")'
 )
@@ -123,7 +125,7 @@ F_ENGAJAMENTO = (
     '"❄️ Frio (" + format(prop("Aberturas recentes (news)")) + "/6)")))'
 )
 F_ESFRIANDO = (
-    'if(prop("Estágio").name == "Suspect (aquecimento)", "—", '
+    'if(prop("Estágio") == "Suspect (aquecimento)", "—", '
     'if(empty(prop("Último toque")), "⚠️ nunca tocado", '
     'if(dateBetween(now(), prop("Último toque"), "days") > 14, '
     '"🥶 Esfriando (" + format(dateBetween(now(), prop("Último toque"), "days")) + "d)", "🔥 Em dia")))'
@@ -154,10 +156,8 @@ def leads_props_base() -> dict:
         "Faixa etária": select("até 35", "36-45", "46-55", "56-65", "65+"),
         "Produtos atuais": rich_text(),
         "Próximo toque (data)": date(),
-        # Fórmulas que NÃO dependem de rollup já entram na 1ª passada:
-        "Qualificado?": formula(F_QUALIFICADO),
-        "Gate · status": formula(F_GATE_STATUS),
-        "Sinal de engajamento": formula(F_ENGAJAMENTO),
+        # Fórmulas NÃO entram na criação (a API recusa fórmula no mesmo payload das
+        # props que ela referencia) — são aplicadas via PATCH depois (passo [4/4]).
     }
 
 
@@ -309,9 +309,14 @@ def main() -> None:
     else:
         print("  ⚠️  pulado: relações não criadas. Crie relações+rollups à mão (§2.4).")
 
-    print("\n[4/4] Fórmula dependente de rollup (Esfriando?):")
-    patch_database(token, leads_id, {"Esfriando?": formula(F_ESFRIANDO)},
-                   "fórmula Esfriando? criada")
+    print("\n[4/4] Fórmulas (PATCH individual, best-effort — props já existem):")
+    for nome, expr in (
+        ("Qualificado?", F_QUALIFICADO),
+        ("Gate · status", F_GATE_STATUS),
+        ("Sinal de engajamento", F_ENGAJAMENTO),
+        ("Esfriando?", F_ESFRIANDO),  # depende do rollup 'Último toque' ([3/4])
+    ):
+        patch_database(token, leads_id, {nome: formula(expr)}, f"fórmula '{nome}' criada")
 
     print("\n" + "─" * 70)
     print("✅ Setup concluído (o que a API permitiu).")

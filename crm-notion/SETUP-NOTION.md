@@ -116,8 +116,10 @@ faltar o token (ver F1.3).
 
 ## 4. Fórmulas canônicas (Notion Formula 2.0 — cole estas)
 
-> Em Formula 2.0, **Status e Select são objetos** → compare com **`.name`**.
-> `prop("Estágio")` sozinho não compara com string; use `prop("Estágio").name`.
+> **O script cria `Estágio` como `select`** (a API não cria `status`). Em `select`,
+> compare **sem `.name`**: `prop("Estágio") == "..."`. Usar `.name` num select dá
+> **"Type error with formula"** (testado). **Só** se você converter `Estágio` para
+> **Status** na UI depois é que precisa adicionar `.name` nas fórmulas 4.2 e 4.4.
 
 ### 4.1 `Qualificado?` — gate dos 3 critérios [WP] (checkboxes → booleano, sem `.name`)
 ```
@@ -128,10 +130,10 @@ if(
 )
 ```
 
-### 4.2 `Gate · status` — alerta de diluição [WP] (usa `.name` no Status)
+### 4.2 `Gate · status` — alerta de diluição [WP] (Estágio = select, sem `.name`)
 ```
 if(
-  (prop("Estágio").name == "Qualified prospect" or prop("Estágio").name == "Nurturing")
+  (prop("Estágio") == "Qualified prospect" or prop("Estágio") == "Nurturing")
     and not (prop("Gate ✓ Reunião feita") and prop("Gate ✓ Patrimônio R$1mi+") and prop("Gate ✓ Receptivo (stay engaged)")),
   "🚨 Qualified sem os 3 ✓ — revisar",
   ""
@@ -146,19 +148,19 @@ if(empty(prop("Aberturas recentes (news)")), "❄️ sem dado",
       "❄️ Frio (" + format(prop("Aberturas recentes (news)")) + "/6)")))
 ```
 
-### 4.4 `Esfriando?` — sem toque há +14 dias, só no pipeline [spec §7] (usa `.name`)
+### 4.4 `Esfriando?` — sem toque há +14 dias, só no pipeline [spec §7] (sem `.name`)
 Suspects são aquecidos pela newsletter (não por toques 1:1) → ficam fora do alerta:
 ```
-if(prop("Estágio").name == "Suspect (aquecimento)", "—",
+if(prop("Estágio") == "Suspect (aquecimento)", "—",
   if(empty(prop("Último toque")), "⚠️ nunca tocado",
     if(dateBetween(now(), prop("Último toque"), "days") > 14,
       "🥶 Esfriando (" + format(dateBetween(now(), prop("Último toque"), "days")) + "d)",
       "🔥 Em dia")))
 ```
 
-> **Por que `.name`:** sem ele, a comparação de um objeto Status/Select com string
-> retorna `false` silenciosamente em Formula 2.0 — a fórmula "funciona" mas nunca
-> dispara. As fórmulas de checkbox/number (4.1, 4.3) **não** usam `.name`.
+> **Nota:** estas 4 fórmulas foram **aplicadas pelo script com sucesso** (Estágio =
+> select, sem `.name`). Se você converter `Estágio` para **Status** na UI, edite 4.2
+> e 4.4 trocando `prop("Estágio")` por `prop("Estágio").name`.
 
 ---
 
